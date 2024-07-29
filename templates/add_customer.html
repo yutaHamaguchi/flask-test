@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>新規顧客追加</h2>
+    <form method="POST">
+        <div>
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">電話番号:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <button type="submit">追加</button>
+    </form>
+{% endblock %}

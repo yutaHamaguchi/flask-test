@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顧客管理ツール</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>顧客管理ツール</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">顧客一覧</a></li>
+                <li><a href="{{ url_for('add_customer') }}">新規顧客追加</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 顧客管理ツール</p>
+    </footer>
+</body>
+</html>
